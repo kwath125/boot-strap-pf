@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>writeForm</title>
+<link rel="stylesheet" href="../css/index.css" />
+<link rel="stylesheet" href="../css/bootstrap.css" />
+<link rel="stylesheet" href="../css/bootstrap-theme.css" />
+<link rel="stylesheet" href="../css/font-awesome.min.css" />
+<!-- Header -->
+</head>
+<body>
+	<!-- Nav-->
+	<nav id="top-menu-navbar" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Navigation</span> <span class="icon-bar"></span>
+				<span class="icon-bar"></span> <span class="icon-bar"></span>
+			</button>
+		</div>
+		<div id="menu-navbar"
+			class="navbar-collapse navbar-ex1-collapse collapse in"
+			aria-expanded="true">
+			<ul class="nav navbar-nav">
+				<li><a href="../index.html" accesskey="1" title="">홈으로</a></li>
+				<li><a href="../about/about.html" accesskey="2" title="">커뮤니티소개</a></li>
+				<li><a href="notice.html" accesskey="3" title="">공개게시판</a></li>
+			</ul>
+			<div class="navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="../member/login.html">로그인</a>
+					<li>
+					<li><a href="../member/join.html">회원가입</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="wrapper">
+		<div id="page" class="container">
+			<div class="table-responsive">
+				<article>
+					<h1>공개 게시판 글작성</h1>
+						<form>
+						<table class="table table-striped" id="table table-striped">
+							<tr>
+								<th scope="col" width="200">아이디</th>
+								<td style="text-align: left; width: 500px;"><input
+									type="text" name="name" value=""></td>
+							</tr>
+							<tr>
+								<th scope="col">글제목</th>
+								<td style="text-align: left;"><input type="text"
+									name="subject"></td>
+							</tr>
+							<tr>
+								<th scope="col">파일</th>
+								<td style="text-align: left;">
+									<button type="button" class="button" id="btnAddFile">첨부파일
+										추가</button>
+									<div id="fileBox">
+										<div>
+											<input type="file" name="filename"> <span
+												class="fileDelete">X</span>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">글내용</th>
+								<td style="text-align: left;"><textarea rows="13" cols="40"
+										name="content"></textarea></td>
+							</tr>
+						</table>
+
+						<div id="table_search">
+							<button type="button" class="button" 
+								onclick="location.href='notice.html'">파일글쓰기</button>
+							<button type="reset" class="button">다시쓰기</button>
+							<button type="button" class="button"
+								onclick="location.href='notice.html'">목록보기</button>
+						</div>
+						</form>
+					<div class="clear"></div>
+				</article>
+			</div>
+		</div>
+	</div>
+	<div id="wrapper">
+		<div id="bottom-wrapper">
+			<div id="bottom-wrapper-box" class="container">
+				<div class="col-md-4">
+					<h3>여!놀자</h3>
+					<p>
+						Lorem ipsum dolor sit amet nullam consequat <br /> interdum
+						vivamus donce sed libero.
+					</p>
+				</div>
+				<div class="col-md-8">
+					<h3>Contact Us</h3>
+					<form action="">
+						<div class="col-md-3">
+							<input type="text" placeholder="Name" class="bottom-input">
+							<br> <input type="text" placeholder="E-mail"
+								class="bottom-input"> <br>
+						</div>
+						<div class="col-md-9">
+							<textarea placeholder="Message" class="textarea"></textarea>
+							<input type="text" placeholder="Send" class="bottom-send">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="bottom-reserved">ⓒ2020. All Rights Reserved.</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../js/jquery-3.5.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/f31fb562ea.js" crossorigin="anonymous"></script>
+<title>notice</title>
+<link rel="stylesheet" href="../css/index.css" />
+<link rel="stylesheet" href="../css/bootstrap.css" />
+<link rel="stylesheet" href="../css/bootstrap-theme.css" />
+<link rel="stylesheet" href="../css/font-awesome.min.css" />
+<!-- Header -->
+</head>
+<body>
+	<!-- Nav-->
+	<nav id="top-menu-navbar" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target=".navbar-ex1-collapse">
+				<span class="sr-only">Navigation</span> <span class="icon-bar"></span>
+				<span class="icon-bar"></span> <span class="icon-bar"></span>
+			</button>
+		</div>
+		<div id="menu-navbar"
+			class="navbar-collapse navbar-ex1-collapse collapse in"
+			aria-expanded="true">
+			<ul class="nav navbar-nav">
+				<li><a href="../index.html" accesskey="1" title="">홈으로</a></li>
+				<li><a href="../about/about.html" accesskey="2" title="">커뮤니티소개</a></li>
+				<li><a href="notice.html" accesskey="3" title="">공개게시판</a></li>
+			</ul>
+			<div class="navbar-right">
+				<ul class="nav navbar-nav">
+					<li><a href="../member/login.html">로그인</a>
+					<li>
+					<li><a href="../member/join.html">회원가입</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="wrapper">
+		<div id="page" class="container">
+			<!-- Main -->
+			<section>
+				<article>
+					<h1 style="padding-left: 15px !important;">공개 게시판 [전체글갯수: 100 ]</h1>
+					<div class="table-responsive col-md-12">
+						<table class="table table-striped">
+							<tr>
+								<th>글번호</th>
+								<th>제목</th>
+								<th>작성자</th>
+								<th>작성일</th>
+								<th>조회수</th>
+							</tr>
+							<tr>
+								<td>100</td>
+								<td style="text-align: left !important; cursor: pointer;" onclick="location.href='content.html'">100번 게시물</td>
+								<td>홍길동</td>
+								<td>2020.11.01</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>99</td>
+								<td style="text-align: left !important; cursor: pointer;" onclick="location.href='content.html'">99번 게시물</td>
+								<td>성춘향</td>
+								<td>2020.11.01</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>98</td>
+								<td style="text-align: left !important; cursor: pointer;" onclick="location.href='content.html'">98번 게시물</td>
+								<td>이몽룡</td>
+								<td>2020.11.01</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>97</td>
+								<td style="text-align: left !important; cursor: pointer;" onclick="location.href='content.html'">97번 게시물</td>
+								<td>고길동</td>
+								<td>2020.11.01</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>96</td>
+								<td style="text-align: left !important; cursor: pointer;" onclick="location.href='content.html'">96번 게시물</td>
+								<td>성춘향</td>
+								<td>2020.11.01</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<td>95</td>
+								<td style="text-align: left !important; cursor: pointer;" onclick="location.href='content.html'">95번 게시물</td>
+								<td>홍길동</td>
+								<td>2020.11.01</td>
+								<td>2</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="col-md-6"></div>
+					<div id="table_search" class="col-md-5 col-md-offset-1">
+						<form action="notice.html" method="get">
+							<select name="category" class="category">
+								<option value="content" class="" >글내용</option>
+								<option value="subject" >글제목</option>
+								<option value="name" >작성자</option>
+							</select> 
+							<input type="text" name="search" value="" class="searchbox"> <input type="submit" value="검색"class="button-search">
+						</form>
+
+						<input type="button" value="글쓰기" class="button"onclick="location.href='writeForm.html'">
+					</div>
+
+				</article>
+			</section>
+		</div>
+
+		<div class="clear"></div>
+		<div id="page_control">
+			<ul class="pagination">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="wrapper">
+		<div id="bottom-wrapper">
+			<div id="bottom-wrapper-box" class="container">
+				<div class="col-md-4">
+					<h3>여!놀자</h3>
+					<p>
+						Lorem ipsum dolor sit amet nullam consequat <br /> interdum
+						vivamus donce sed libero.
+					</p>
+				</div>
+				<div class="col-md-8">
+					<h3>Contact Us</h3>
+					<form action="">
+						<div class="col-md-3">
+							<input type="text" placeholder="Name" class="bottom-input">
+							<br> <input type="text" placeholder="E-mail"
+								class="bottom-input"> <br>
+						</div>
+						<div class="col-md-9">
+							<textarea placeholder="Message" class="textarea"></textarea>
+							<input type="text" placeholder="Send" class="bottom-send">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="bottom-reserved">ⓒ2020. All Rights Reserved.</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../js/jquery-3.5.1.js"></script>
+	<script src="../js/bootstrap.js"></script>
+
+</body>
+</html>
+
